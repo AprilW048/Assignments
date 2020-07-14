@@ -15,3 +15,4 @@ HTML documents are used to create websites, it presents content as plain text, w
 Name does not have to be unique, while id must be unique in the whole document.
 
 5. Apply color to a textarea by using color input tag
+See in the html file.
