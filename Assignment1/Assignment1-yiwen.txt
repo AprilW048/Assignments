@@ -12,6 +12,8 @@ outside the range of normal seven-bit ASCII into a standard form.
 HTML documents are used to create websites, it presents content as plain text, while the CSS can help to style the web pages.
 
 4. id Vs name
+ids are accessed from the frontend, typically used through CSS, JavaScript.
+The name attribute is used by the server to identify the fields in form submits. Its value is mostly sent to the backend for processing.
 Name does not have to be unique, while id must be unique in the whole document.
 
 5. Apply color to a textarea by using color input tag
