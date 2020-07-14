@@ -1,0 +1,17 @@
+1. What is non-breaking in &nbsp;   
+A non-breaking space is a space that will not break into a new line. 
+Non-breaking space can prevent browsers from truncating spaces in HTML pages.
+
+2. What is encoding.
+HTML Encoding means to convert the document that contains special characters 
+outside the range of normal seven-bit ASCII into a standard form. 
+
+3. .txt , .doc, .html  
+.txt files containing nothing but text. 
+.doc not only save text but also the formatting styles.  
+HTML documents are used to create websites, it presents content as plain text, while the CSS can help to style the web pages.
+
+4. id Vs name
+Name does not have to be unique, while id must be unique in the whole document.
+
+5. Apply color to a textarea by using color input tag
