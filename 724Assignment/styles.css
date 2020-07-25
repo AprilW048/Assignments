@@ -1,0 +1,43 @@
+* {
+  text-align: center;
+  color: rgb(243, 250, 253);
+  font-weight: 700;
+}
+body {
+  background-color: rgb(105, 163, 183);
+}
+h2 {
+  font-family: "Cookie", cursive;
+  font-size: 36px;
+  font-weight: 300;
+  margin: 15px;
+}
+
+.unselect {
+  background-color: rgb(229, 89, 134);
+  box-shadow: 2px 2px 2px rgb(229, 89, 134);
+}
+.selected {
+  background-color: rgb(141, 193, 110);
+  box-shadow: 2px 2px 2px rgb(141, 193, 110);
+}
+.menu {
+  width: 250px;
+  text-align: left;
+  border: none;
+  padding: 12px;
+  margin: 4px;
+  cursor: pointer;
+}
+.menu > span,
+p > span {
+  float: right;
+}
+hr {
+  width: 250px;
+}
+.total {
+  width: 226px;
+  margin: 0 auto;
+  text-align: start;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="angular.js"></script>
+    <script src="orderForm.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body ng-app="myModule">
+    <div ng-controller="myController">
+      <h2>Services</h2>
+      <div ng-repeat="ser in services">
+        <button
+          class="menu"
+          ng-class="ser.value?'selected':'unselect'"
+          ng-click="menuClick($index,ser)"
+        >
+          {{ser.name}} <span>{{ser.price| currency}}</span>
+        </button>
+      </div>
+      <hr />
+      <div>
+        <p class="total">Total:<span>{{total| currency}}</span></p>
+      </div>
+    </div>
+  </body>
+</html>
