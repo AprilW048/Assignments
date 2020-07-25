@@ -4,13 +4,14 @@
     <script src="angular.js"></script>
     <script src="instantSearch.js"></script>
     <link rel="stylesheet" href="styles2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Document</title>
   </head>
   <body ng-app="search">
     <div ng-controller="searchController">
       <div class="searchBar">
-        <input type="text" placeholder="Enter your search terms" ng-model="searchVal"></input>
+        <input type="text" placeholder="  &#xf002  Enter your search terms" ng-model="searchVal"></input>
       </div>
       <div ng-repeat="emo in emojis">
         <div class="result"><span>{{emo.title}}</span><span>{{emo.symbol}}</span></div><hr>

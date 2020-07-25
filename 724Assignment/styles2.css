@@ -18,6 +18,10 @@ input {
   height: 30px;
   margin: 15px;
   border: none;
+  font-family: FontAwesome;
+}
+input::placeholder {
+  text-align: left;
 }
 hr {
   width: 400px;
