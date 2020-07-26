@@ -11,9 +11,11 @@
   <body ng-app="search">
     <div ng-controller="searchController">
       <div class="searchBar">
-        <input type="text" placeholder="  &#xf002  Enter your search terms" ng-model="searchVal"></input>
+        <!-- <input type="text" placeholder="  &#xf002  Enter your search terms" ng-model="searchVal"></input> -->
+        <input type="text" placeholder="  &#xf002  Enter your search terms" ng-model="query.title"></input> 
+        <!-- filter by title -->
       </div>
-      <div ng-repeat="emo in emojis">
+      <div ng-repeat="emo in emojis|filter:query">
         <div class="result"><span>{{emo.title}}</span><span>{{emo.symbol}}</span></div><hr>
       </div>
     </div>
