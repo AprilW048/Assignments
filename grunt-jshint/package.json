@@ -1,0 +1,20 @@
+{
+  "name": "grunt-jshint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.2.1",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "grunt-contrib-jshint": "^2.1.0",
+    "jshint-html-reporter": "^0.2.5"
+  }
+}
