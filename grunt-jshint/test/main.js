@@ -41,7 +41,7 @@ var myFunction = function () {
 
   //eqnull: This option suppresses warnings about == null comparisons. Such comparisons are often useful when you want to check if a variable is null or undefined.
   var x = 13;
-  let x = 12;
+  // let x = 12;
   if (x === null) {
     console.log("x is null");
   }
