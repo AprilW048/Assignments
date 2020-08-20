@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Xena Events</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      body {
+        border-radius: 25px;
+        border: 3px solid #4f575a;
+        padding: 50px;
+        width: 70%;
+        margin: 5% auto;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+      }
+      .logo {
+        height: 5rem;
+        width: 5rem;
+        padding-right: 0.5rem;
+      }
+      h1 {
+        margin: 0;
+        font-size: 4.5rem;
+        font-weight: 600;
+        font-family: "Mukta", sans-serif;
+        text-transform: uppercase;
+      }
+      i {
+        font-weight: 200;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        font-family: "Mukta", sans-serif;
+        text-transform: uppercase;
+        text-align: start;
+        margin-top: 2%;
+      }
+      input {
+        line-height: 2rem;
+      }
+      button {
+        width: 20%;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 8%;
+        background-color: #4f575a;
+        color: aliceblue;
+        border-radius: 5px;
+        border-style: none;
+      }
+      button:hover {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./src/xena.jpg" class="logo" alt="logo" />
+      <h1>xena <i>events</i></h1>
+    </header>
+
+    <form action="submit">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        required
+        placeholder="Name"
+        pattern="[A-Za-z\s]{1,}"
+      />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" required placeholder="Age" min="18" />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        required
+        placeholder="Email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      />
+
+      <label for="city">City</label>
+      <input type="text" list="cities" required placeholder="City" />
+      <datalist id="cities">
+        <option>Rajkot</option>
+        <option>Vizag</option>
+        <option>Bangalore</option>
+      </datalist>
+
+      <button>SUBMIT</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Online Videos</title>
+    <script
+      src="https://kit.fontawesome.com/0b2015a66a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 600;
+        color: #112d4e;
+        font-family: "Mukta", sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        width: 10%;
+        height: 40px;
+        margin: 0 2%;
+        margin-top: 2%;
+        background-color: #3f72af;
+        color: aliceblue;
+        border-radius: 5px;
+        border-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Awesome Online videos
+      </h1>
+      <img src="https://img.icons8.com/color/96/000000/video.png" />
+    </header>
+
+    <div>
+      <div id="video"></div>
+      <div>
+        <button class="btn" onclick="playVideo()">
+          <i class="fas fa-play"></i>&nbsp; Play
+        </button>
+        <button class="btn" onclick="pauseVideo()">
+          <i class="fas fa-pause"></i>&nbsp; Pause
+        </button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // loads the IFrame Player API code asynchronously.
+    var tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName("script")[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    // global variable for the player
+    var player;
+
+    // this function gets called when API is ready to use
+    function onYouTubePlayerAPIReady() {
+      // create the global player from the specific iframe (#video)
+      player = new YT.Player("video", {
+        height: "390",
+        width: "640",
+        videoId: "sVZpHFXcFJw",
+      });
+    }
+
+    function pauseVideo() {
+      player.pauseVideo();
+    }
+
+    function playVideo() {
+      player.playVideo();
+    }
+  </script>
+</html>

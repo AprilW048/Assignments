@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="text/javascript"
+      src="https://canvasjs.com/assets/script/canvasjs.min.js"
+    ></script>
+    <script>
+      // var myCanvas = document.getElementById('myCanvas')
+      // myCanvas.width=600
+      // myCanvas.height=300
+
+      // var ctx = myCanvas.getContext("2d");
+      window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          title: {
+            text: "The Yield of Bajra From 2001 to 2007",
+          },
+          data: [
+            {
+              type: "line",
+
+              dataPoints: [
+                { x: new Date(2001, 0).getFullYear(), y: 281 },
+                { x: new Date(2002, 0).getFullYear(), y: 277 },
+                { x: new Date(2003, 0).getFullYear(), y: 275 },
+                { x: new Date(2004, 0).getFullYear(), y: 457 },
+                { x: new Date(2005, 0).getFullYear(), y: 200 },
+                { x: new Date(2006, 0).getFullYear(), y: 280 },
+                { x: new Date(2007, 0).getFullYear(), y: 150 },
+              ],
+            },
+          ],
+        });
+
+        chart.render();
+      };
+    </script>
+  </head>
+  <body>
+    <div id="chartContainer"></div>
+  </body>
+</html>
