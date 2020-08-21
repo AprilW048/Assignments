@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const Form = () => {
@@ -11,7 +11,7 @@ const Form = () => {
 
   function onFetch() {
     axios
-      .get(`https://jsonplaceholder.typicode.com/post/${id}`)
+      .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then((res) => {
         {
           setTitle(res.data.title);
